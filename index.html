@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/0eb56815fe.js" crossorigin="anonymous"></script>
+        <script>
+            document.addEventListener('scroll', () => {
+            const header = document.querySelector('nav');
+
+            if (window.scrollY > 0) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        })
+        </script>
+</head>
+    <body>
+        <header>
+            <nav>
+                <a class ="navigation" href="index.html">Home</a>
+                <a class ="navigation" href="resume.html">Resume</a>
+                <a class ="navigation" href="portfolio.html">Portfolio</a>
+                <a class ="navigation" href="contact.html">contact</a>
+                <a class ="navigation" id="download" href="download" download>Download CV</a>
+            </nav>
+        </header>
+            <div class ="landing-page">
+                <div class="center">
+                    <h2 style="margin-bottom: -40px;"">Hello, I'm</h2>
+                    <h1>Joshua Rakoski</h1>
+                    <h2 style="margin-top: -40px;">Web Designer and Developer</h2>
+                    <p style="color: white; text-transform: uppercase; margin-bottom: 0px;">Find me on</p>
+                    <a href="https://www.linkedin.com/in/joshua-rakoski/" target="_blank"><span id="socials" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></span></a>
+                    <a href="https://github.com/jsrk7" target="_blank"><span id="socials" class="github"><i class="fa-brands fa-github"></i></span></a>
+                    <a href="youtube.com"><span id="socials" class="youtube"><i class="fa-brands fa-youtube"></i></span></a>
+                    <a href="https://dribbble.com/jsrk73" target="_blank"><span id="socials" class="dribbble"><i class="fa-brands fa-dribbble target=_blank"></i></span></a>
+                </div>
+            </div>
+            <h2 style="text-align: center;">Resume</h2>
+            <div class="row">
+            <div class="column" id="percent-eighty">
+                <img src="https://media.licdn.com/dms/image/C4E03AQHUAXmLOAMMjQ/profile-displayphoto-shrink_800_800/0/1555801726477?e=2147483647&v=beta&t=txGuHLylvOKJK_iAXEGXszHMRoDgDRz2jXK3ZMMQDxI" class="resume-pic">
+                <h2 style="font-size: 30px; text-align: center;">Joshua Rakoski</h2>
+                <p style="text-align: center;">I am an aspiring entreprenuer, computer scientist, and leader living in the Blacksburg, VA area.</p>
+                <h3>Skills</h3>
+                <div class="skills">
+                    <p>HTML</p>
+                    <div class="bar">
+                        <div class="html"></div>
+                    </div>
+                    <p>CSS</p>
+                    <div class="bar">
+                        <div class="html" style="width: 100%;"></div>
+                    </div>
+                    <p>C++</p>
+                    <div class="bar">
+                        <div class="html" style="width: 50%;"></div>
+                    </div>
+                    <p>Java</p>
+                    <div class="bar">
+                        <div class="html" style="width: 60%;"></div>
+                    </div>
+                    <p>Command Line</p>
+                    <div class="bar">
+                        <div class="html" style="width: 30%;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="column" id="percent-twenty">
+                <div class="experience">
+                <h2 style="margin-top: 0px;">Experience</h2>
+                <div class="resume-inner">
+                <h3>Project Coordinator</h3>
+                <h4>Cabo Fish Taco | BLACKSBURG, VA | MAR 2022 - PRESENT</h4>
+                <ul>
+                    <li>Created social media</li>
+                    <li>Implemented online draft beer list</li>
+                    <li>Managed company website</li>
+                    <li>This is another point</li>
+                </ul>
+                <h3>Founder & CEO</h3>
+                <h4>Simpligeek LLC | BLACKSBURG, VA | JAN 2022 - PRESENT</h4>
+                <ul>
+                    <li>Created social media</li>
+                    <li>Implemented online draft beer list</li>
+                    <li>Managed company website</li>
+                    <li>This is another point</li>
+                </ul>
+                </div>
+                </div>
+                <div class="education">
+                    <h2 style="margin-top: 0px;">Education</h2>
+                    <div class="resume-inner">
+                    <h3>Southern New Hampshire University</h3>
+                    <h4>Bachelors of Science in Finance</h4>
+                    <p>GPA: 3.51</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <h2 style="text-align: center">My Projects</h2>
+            <div class="row" style="overflow-x: auto;">
+                <div class="column" id="quarter" style="flex: 25%; background:linear-gradient(rgba(252, 82, 3, 0.6), rgba(252, 3, 61, 0.6)); margin: 5px; border-radius: 10px; box-shadow: 5px 0px 15px #f3f3f3;">
+                    <div class="gradientb">
+                        <img src="https://media.licdn.com/dms/image/C4E03AQHUAXmLOAMMjQ/profile-displayphoto-shrink_800_800/0/1555801726477?e=2147483647&v=beta&t=txGuHLylvOKJK_iAXEGXszHMRoDgDRz2jXK3ZMMQDxI" class="resume-pic">
+                        <h3>Shamtons Media</h3>
+                        <p>Platforms Used: Wordpress, News Website, and more</p>
+                    </div>
+                </div>
+                <div class="column" id="quarter" style="flex: 25%; background:linear-gradient(rgba(252, 82, 3, 0.6), rgba(252, 3, 61, 0.6)); margin: 5px; border-radius: 10px; box-shadow: 5px 0px 15px #f3f3f3;">
+                    <div class="gradientb">
+                        <img src="https://media.licdn.com/dms/image/C4E03AQHUAXmLOAMMjQ/profile-displayphoto-shrink_800_800/0/1555801726477?e=2147483647&v=beta&t=txGuHLylvOKJK_iAXEGXszHMRoDgDRz2jXK3ZMMQDxI" class="resume-pic">
+                        <h3>Shamtons Media</h3>
+                        <p>Platforms Used: Wordpress, News Website, and more</p>
+                    </div>
+                </div>
+                <div class="column" id="quarter" style="flex: 25%; background:linear-gradient(rgba(252, 82, 3, 0.6), rgba(252, 3, 61, 0.6)); margin: 5px; border-radius: 10px; box-shadow: 5px 0px 15px #f3f3f3;">
+                    <div class="gradientb">
+                        <img src="https://media.licdn.com/dms/image/C4E03AQHUAXmLOAMMjQ/profile-displayphoto-shrink_800_800/0/1555801726477?e=2147483647&v=beta&t=txGuHLylvOKJK_iAXEGXszHMRoDgDRz2jXK3ZMMQDxI" class="resume-pic">
+                        <h3>Shamtons Media</h3>
+                        <p>Platforms Used: Wordpress, News Website, and more</p>
+                    </div>
+                </div>
+                <div class="column" id="quarter" style="flex: 25%; background:linear-gradient(rgba(252, 82, 3, 0.6), rgba(252, 3, 61, 0.6)); margin: 5px; border-radius: 10px; box-shadow: 5px 0px 15px #f3f3f3;">
+                    <div class="gradientb">
+                        <img src="https://media.licdn.com/dms/image/C4E03AQHUAXmLOAMMjQ/profile-displayphoto-shrink_800_800/0/1555801726477?e=2147483647&v=beta&t=txGuHLylvOKJK_iAXEGXszHMRoDgDRz2jXK3ZMMQDxI" class="resume-pic">
+                        <h3>Shamtons Media</h3>
+                        <p>Platforms Used: Wordpress, News Website, and more</p>
+                    </div>
+                </div>
+            </div>
+            <h2 style="text-align: center;">Contact</h2>
+            <div class="row" id="contact">
+                <div class="container">
+                <form action='mail.php' method="post" >
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="First Name">
+                    <label for="lname">Last name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Last Name">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email">
+                    <label for="comment">Comment or Question</label>
+                    <textarea id="message" name="message" placeholder="Question or comment..." style="height:200px"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+                </div>
+            </div>
+        </header>
+    </body>
+</html>

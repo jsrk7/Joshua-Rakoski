@@ -1,0 +1,305 @@
+body {
+    background: white;
+    color: black;
+    margin: 0;
+    font-family: Roboto;
+}
+.resume {
+    text-align: center;
+}
+header {
+    /* From https://css.glass */
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    margin: 0 auto;
+}
+.navigation {
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+header nav {
+    text-align: center;
+    background: linear-gradient(rgba(255, 81, 0, 0.65), rgba(255, 3, 90, 0.65));
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(50px);
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+header nav:hover {
+    background: black;
+    transition: 2s background;
+}
+header nav.scrolled {
+    background: black;
+    transition: 2s background;
+}
+
+header:hover {
+    color: black;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    header nav {
+        margin-top: 0px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    header nav {
+        margin-top: 0px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        align-content: space-between;
+    }
+    #download {
+        display: block;
+        max-width:fit-content;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .navigation {
+        text-align:justify;
+        font-size: 16px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+.navigation:hover {
+    border-bottom: 3px solid white;
+    transition: 0.5s border;
+}
+
+/* Download Button */
+header nav #download {
+    padding: 10px 15px;
+    background: black;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    /* background: linear-gradient(rgba(3, 252, 194, 0.95), rgba(3, 169, 252, 0.95));
+    */border-radius: 100px;
+    color: white;
+    text-transform: uppercase;
+    border: 3px solid white;
+}
+
+#download:hover {
+    transform: scale(1.1) !important;
+    font-size: 21px;
+    transition: 0.5s font-size;
+}
+/* Changes landing page background */
+.landing-page {
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("https://www.visittheusa.com/sites/default/files/styles/state_hero_l/public/images/hero_media_image/2018-11/b311c1481829913164f33a353de10a66.jpeg?h=48d516a6&itok=P8lHZO0p");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: none;
+    z-index: 1;
+    margin: 0;
+    display: block;
+    align-items: center;
+    top: 0;
+    width: 100%;
+}
+
+.center {
+    width: 80%;
+    top: 60%;
+    padding-top: 250px;
+    color: white;
+    margin: 0 auto;
+}
+h1 {
+    font-size: 100px;
+    line-height: 1em;
+}
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+/* Rows & Sections template */
+
+.row {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.column {
+    margin: 20px;
+    flex: 25%;
+}
+
+#quarter {
+    background: linear-gradient(rgba(252, 82, 3, 0.6), rgba(252, 3, 61, 0.6));
+}
+
+/* Modifies Appearance of resume */
+    #percent-twenty {
+    flex: 80%; 
+}
+#percent-eighty {
+    flex: 20%;
+    border-radius: 10px;
+    padding: 20px;
+    background: linear-gradient(rgba(252, 82, 3, 0.6), rgba(252, 3, 61, 0.6));
+    box-shadow: 10px 0 15px #d3d3d3;
+}
+
+@media (min-width: 768px) and (max-width: 1023px)  {
+    #percent-twenty, #percent-eighty, .row{
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+    #percent-eighty {
+        margin-bottom: 30px;
+    }
+    .experience, .education {
+        padding: 0px;
+    }
+}
+
+@media (max-width: 768px)  {
+    #percent-twenty, #percent-eighty, .row{
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+    #percent-eighty {
+        margin-bottom: 30px;
+    }
+    .experience, .education {
+        padding: 0px;
+    }
+}
+
+.experience {
+    margin-bottom: 30px;
+    box-shadow: 10px 0 15px #d3d3d3;
+    padding: 20px;
+}
+.education {
+    margin-bottom: 30px;
+    box-shadow: 10px 0 15px #d3d3d3;
+    padding: 20px;
+}
+.resume-inner {
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 3px dotted black;
+}
+.resume-pic {
+    border-radius: 100px;
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: auto;
+    border: 3px solid white;
+}
+
+/* Appearance of Skills bars */
+
+.bar {
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+}
+.html {
+    width: 100%;
+    background: black;
+    height: 24px;
+    border-radius: 10px;
+}
+.skills {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#contact {
+    margin: 0 auto;
+}
+.resume-header {
+    /* background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://www.visittheusa.com/sites/default/files/styles/state_hero_l/public/images/hero_media_image/2018-11/b311c1481829913164f33a353de10a66.jpeg?h=48d516a6&itok=P8lHZO0p");
+    */background-size: cover;
+    border-bottom: 5px solid rgba(252, 82, 3, 0.6);
+    margin-bottom: 60px;
+    text-transform: uppercase;
+}
+
+/* Social Icons */
+#socials {
+    display: inline-block;
+    background: white;
+    backdrop-filter: blur(30px);
+    color: black;
+  }
+  #socials:hover {
+    background: linear-gradient(rgba(252, 82, 3, 0.6), rgba(252, 3, 61, 0.6));
+    transition: 0.5s background;
+    backdrop-filter: blur(30px);
+    color: white;
+  }
+  
+  #socials {
+    padding: 20px;
+    border-radius: 2px;
+    border: none;
+  }
+
+  /* Form appearance */
+  input[type="text"], textarea, input[type="email"] {
+    width: 100%;
+    background: #f3f3f3;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: none;
+    margin-top: 10px;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+label {
+    font-size: 24px;
+    font-weight: bold;
+}
+.container {
+    width: 80%;
+    padding: 20px;
+    box-shadow: 10px 0 15px #d3d3d3;
+    margin: 0 auto;
+}
+input[type="submit"] {
+    border: none;
+    background: black;
+    color: white;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.gradientb {
+    background: white;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+}
