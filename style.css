@@ -3,6 +3,7 @@ body {
     color: black;
     margin: 0;
     font-family: Roboto;
+    top: 0;
 }
 .resume {
     text-align: center;
@@ -243,6 +244,7 @@ h3 {
     border-bottom: 5px solid rgba(252, 82, 3, 0.6);
     margin-bottom: 60px;
     text-transform: uppercase;
+    top: 0;
 }
 
 /* Social Icons */
