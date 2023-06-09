@@ -20,6 +20,21 @@
 
         <div class="resume-header">
             <h2 style="text-align: center; padding-top: 200px; padding-bottom: 100px;">Contact</h2>
-        </div>   
+        </div>
+            <div class="row" id="contact">
+                <div class="container" style="margin-bottom: 100px;">
+                <form action='mail.php' method="post" >
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="First Name">
+                    <label for="lname">Last name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Last Name">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email">
+                    <label for="comment">Comment or Question</label>
+                    <textarea id="message" name="message" placeholder="Question or comment..." style="height:200px"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+                </div>
+            </div>   
     </body>
 </html>
