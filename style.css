@@ -254,9 +254,9 @@ h3 {
 }
 .resume-header {
     background: linear-gradient(white, white) padding-box,
-        linear-gradient(to right, rgba(252, 82, 3, 0.6),
-        rgba(252, 3, 61, 0.6)) border-box;
-    background-size: cover;
+                linear-gradient(to right, 
+                rgba(252, 82, 3, 0.6),
+                rgba(252, 3, 61, 0.6)) border-box;
     border-bottom: 5px solid transparent;
     text-transform: uppercase;
     top: 0;
