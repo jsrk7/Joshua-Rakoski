@@ -1,27 +1,10 @@
-<?php 
-if(isset($_POST['submit']))
-    $fname = $_POST['fname'];
-    $lname = $_POST['lname'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
-
-    $mailheader = "From: " .$name. "<".$email.">\r\n";
-
-    $recipient = 'josh@simpligeek.com';
-
-    mail($recipient, "Resume Website", $message, $mailheader)
-    or die("Error!");
-
-    echo("Message Sent");
-?>
-
 <?php
 $field_name = $_POST['fname'];
 $field_email = $_POST['email'];
 $field_message = $_POST['message'];
 
 $mail_to = 'josh@simpligeek.com';
-$subject = 'Your Subject'.$field_name;
+$subject = 'Resume Site Submission'.$field_name;
 
 $body_message = 'From: '.$field_name."\n";
 $body_message .= 'E-mail: '.$field_email."\n";
